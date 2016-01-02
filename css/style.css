@@ -1,0 +1,236 @@
+* {margin: 0; padding: 0;}
+
+p {line-height: 160%;}
+
+a {text-decoration: none; color: #fff; transition: all 0.1s ease-in;}
+img {border: 0;}
+
+body {
+	background: #fff;
+	color: #fff;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+}
+
+.clear {clear: both;}
+
+/* Buttons */
+.btn {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 40px;
+	color: rgba(255,255,255, 0.95);
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 20px;
+	outline: 0;
+	transition: all 0.1s ease-in;
+}
+
+.btn-transparent {background: rgba(0,0,0, 0.2);}
+.btn-transparent:hover {background: rgba(0,0,0, 0.4);}
+
+/* Separators */
+.separator {
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.2);
+	width: 30px;
+	height: 5px;
+}
+
+
+@font-face {
+    font-family: 'norwester';
+	src: url('../fonts/norwester/norwester.eot');
+    src: url('../fonts/norwester/norwester.eot?iefix') format('embedded-opentype'),
+		 url('../fonts/norwester/norwester.ttf');
+    font-weight: normal;
+}
+
+
+#about {
+	padding: 60px 0;
+	background: #4593e3;
+	text-align: center;
+	color: #fff;	
+}
+
+#about p {
+	padding: 20px 0 60px;
+	color: rgba(255,255,255, 0.85);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.2px;
+}
+
+#about h3 {
+	padding: 0 0 15px;
+	font-family: 'norwester';
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+#about h4  {
+	margin-top: -20px;
+	font-size: 32px;
+	font-weight: 700;
+	color: #fff;
+	margin-top: 15px;
+}
+
+#about h4 span {
+	display: block;
+	position: relative;
+	left: -60px;
+	top: -5px;
+	font-size: 20px;
+	background: none;
+	padding: 0;
+}
+
+#about h4 b {
+	display: block;
+	position: relative;
+	left: -38px;
+	top: -5px;
+	font-size: 30px;
+	background: none;
+	padding: 0;
+}
+
+
+#about img {
+	width: 100%;
+	max-width: 240px;
+	border-radius: 50%; 
+	border: 15px solid transparent; 
+	box-shadow: 2px 2px 0px rgba(0,0,0, 0.18);
+	transition: all 0.1s ease-in;
+}
+	
+#about img:hover {
+	border: 15px solid #3980C9;
+	position: relative;
+	z-index: 10;
+	transition: all 0.1s ease-in;	
+}
+
+#about span {
+	padding: 8px 20px;
+	position: relative;
+	top: -64px;
+	left: -42px;
+	display: inline-block;
+	background: #4593e3;
+	border-radius: 0 16px 16px 0;
+	font-size: 16px;
+	color: #fff;
+}
+
+/* Member Image Hover Effect */
+.hover_img {
+  display: none
+}
+
+.member-profile:hover .unhover_img{
+  display: none;
+}
+
+.member-profile:hover .hover_img {
+  display: block;
+}
+/* Rows Optimization */
+.row2 {
+	display: none;
+}
+
+.col-md-12 button {
+	font-size: 20px;
+}
+
+
+/* Mobile Devices Optimization */
+@media (min-width: 568px) and (max-width: 992px) {
+
+	.row1 .col-lg-6 {
+	display: inline-block;
+}
+
+	#about img {max-width: 300px;}
+
+}
+
+.row2 .footer-distributed {
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+
+	padding: 45px 50px;
+}
+
+.row2 .footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.row2 .footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.row2 .footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.row2 .footer-distributed .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.row2 .footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-left: 3px;
+}
+
+@media (max-width: 600px) {
+
+	.row2 .footer-distributed .footer-left,
+	.row2 .footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.row2 .footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.row2 .footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
